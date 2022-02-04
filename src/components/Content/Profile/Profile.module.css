@@ -1,39 +1,40 @@
 .profileContainer {
   display: flex;
-  gap: 100px;
   height: 90vh;
 }
 
 .portrait,
 .infoBox {
-  height: 90vh;
   width: 35vw;
 }
 
 .infoBox {
   width: 65vw;
-  margin-top: 150px;
   text-align: center;
+  background-color: #B0A8B9;
 }
 
 .font {
-  margin-top: 100px;
+  margin-top: 250px;
+  color: #4B4453
 }
 
 .name {
   margin-left: 50px;
   margin-top: 50px;
   font-weight: bold;
+  color: #4B4453
 }
 
 .title {
   font-weight: bold;
   margin-top: 20px;
   margin-left: 50px;
+  color: #4B4453
 }
 
 .title span {
-  color: #845ec2;
+  color: #FEFEDF
 }
 
 .info {

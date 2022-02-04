@@ -14,9 +14,13 @@ const About = () => {
         <Box className={styles.header}>
           <ThemeProvider theme={theme}>
             <Box className={styles.titleContainer}>
-              <Typography variant="h2" className={styles.title}>
-                O mnie
-              </Typography>
+              <div className={styles.title}>
+        <div className={styles.titleText}>
+          <div>
+        <span>O mnie</span>
+        </div>
+        </div>
+        </div>
             </Box>
           </ThemeProvider>
         </Box>

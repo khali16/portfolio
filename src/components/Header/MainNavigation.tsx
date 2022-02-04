@@ -3,7 +3,6 @@ import styles from "./MainNavigation.module.css";
 
 const MainNavigation = () => {
   return (
-    <Box>
       <AppBar position="static" className={styles.appbar} elevation={0}>
         <Toolbar className={styles.toolbar}>
           <Typography variant="h6" component="div">
@@ -14,7 +13,6 @@ const MainNavigation = () => {
           </Typography>
         </Toolbar>
       </AppBar>
-    </Box>
   );
 };
 

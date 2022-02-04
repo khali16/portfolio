@@ -1,18 +1,18 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Profile from "./Content/Profile/Profile";
-import Layout from "./Header/Layout";
-import Projects from "./Content/Projects/Projects";
 import About from "./Content/AboutMe/About";
 import WorkoutPlanner from "./Content/SingleProject/WorkoutPlanner/WorkoutPlanner";
+import MeliciiRecipes from "./Content/SingleProject/Melicii/MeliciiRecipes";
+import KeepItCool from "./Content/SingleProject/KeepItCool/KeepItCool";
+import Project from "./Content/Project/Project";
 
 const sections = [
-  <>
-    <Layout />
-    <Profile />
-  </>,
-  <Projects />,
+    <Profile />,
+    <Project />,
   <About />,
+  <MeliciiRecipes />,
+  <KeepItCool />,
   <WorkoutPlanner />,
 ];
 

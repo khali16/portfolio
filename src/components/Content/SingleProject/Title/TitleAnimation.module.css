@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animatedTitle {
+  color: #4B4453;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 12%;
+  transform: translate(-50%, -50%);
+  width: 40vmin;
+}
+.animatedTitle > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animatedTitle > div div {
+  font-size: 8vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animatedTitle > div div span {
+  display: block;
+}
+.animatedTitle > div.textTop {
+  border-bottom: 1vmin solid #4B4453;
+  top: 0;
+}
+.animatedTitle > div.textTop div {
+  animation:  showTopText 3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animatedTitle > div.textTop div span:first-child {
+  color: #FEF7FF 
+}
+.animatedTitle > div.textBottom {
+  bottom: 0;
+}
+.animatedTitle > div.textBottom div {
+  animation: showBottomText 3s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  top: 0;
+  transform: translate(0, -100%);
+}

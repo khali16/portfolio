@@ -1,46 +1,43 @@
-import { Typography, Box, MobileStepper, Button } from "@mui/material";
-import styles from "./Projects.module.css";
-import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import { Box, Button, MobileStepper, Typography } from '@mui/material'
+import TitleAnimation from '../SingleProject/Title/TitleAnimation'
+import styles from './Project.module.css'
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { useState } from "react";
 import { useTheme } from "@mui/material/styles";
-import { projectData } from "./ProjectData";
+import { useStyles } from '../SingleProject/ProjectView/style';
+import { KeyboardArrowLeft, KeyboardArrowRight } from '@mui/icons-material';
+import { projectData } from './ProjectsData';
 
-const Projects = () => {
-  const theme = useTheme();
-  const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-  const [activeStep, setActiveStep] = useState(0);
-  const maxSteps = 3;
+const Project = () => {
 
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleStepChange = (step: number) => {
-    setActiveStep(step);
-  };
-
-  return (
-    <>
-      <Box className={styles.container}>
-        <Box className={styles.titleContainer}>
-          <Typography className={styles.title} variant="h2">
-            Moje projekty
-          </Typography>
-        </Box>
+    const theme = useTheme();
+    const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+    const [activeStep, setActiveStep] = useState(0);
+    const maxSteps = 3;
+  
+    const handleNext = () => {
+      setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    };
+  
+    const handleBack = () => {
+      setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    };
+  
+    const handleStepChange = (step: number) => {
+      setActiveStep(step);
+    };
+  
+    const c = useStyles()
+    return (<>
+    <Box className={styles.projectContainer}>
+        <TitleAnimation titleTop='Moje' titleBottom='projekty' />
         <AutoPlaySwipeableViews
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={activeStep}
           interval={10000}
           onChangeIndex={handleStepChange}
           enableMouseEvents
-          className={styles.carouselContainer}
         >
           {projectData.map((step, index) => (
             <div key={index} className={styles.stepsContainer}>
@@ -51,7 +48,7 @@ const Projects = () => {
                   </Typography>
                   <Button
                     onClick={() => (window.location.href = step.github)}
-                    className={styles.button}
+                    className={styles.githubButton}
                   >
                     GitHub
                   </Button>
@@ -69,6 +66,12 @@ const Projects = () => {
           steps={maxSteps}
           position="static"
           activeStep={activeStep}
+          classes={{
+              root: c.root,
+            dot: c.dot,
+            dotActive: c.dotActive,
+          }}
+          className={styles.stepper}
           nextButton={
             <Button
               size="small"
@@ -100,9 +103,8 @@ const Projects = () => {
             </Button>
           }
         />
-      </Box>
-    </>
-  );
-};
+    </Box>
+    </>)
+}
 
-export default Projects;
+export default Project
