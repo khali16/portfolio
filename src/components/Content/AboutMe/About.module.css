@@ -1,0 +1,53 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100vw;
+  height: 35vh;
+  background-color: #845ec2;
+  /* background-image: linear-gradient(#845ec2, #b39cd0); */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 70%, 0 100%, 0 100%);
+  text-align: center;
+}
+
+.titleContainer {
+  margin-top: 50px;
+  font-family: "Playfair Display", "serif";
+}
+
+.title {
+  color: white;
+}
+
+.body {
+  height: 65vh;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  height: 300px;
+}
+
+.divider {
+  margin-top: 10px;
+}
+
+.iconContent {
+  margin: auto;
+}
+
+.icon {
+  fill: #4b4453 !important;
+}
+
+.infoText {
+  margin-top: 20px;
+}

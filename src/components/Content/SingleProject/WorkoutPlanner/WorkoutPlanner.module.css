@@ -1,0 +1,38 @@
+.plannerContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  height: 10vh;
+  text-align: center;
+  margin-top: 10px;
+  color: #b39cd0;
+}
+
+.viewContainer {
+  background-color: rebeccapurple;
+  width: 60vw;
+  height: 65vh;
+}
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectTitle {
+  text-align: center;
+  color: #4d8076;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.projectGif {
+  margin-top: 20px;
+  height: 350px;
+  display: block;
+  width: 80%;
+  overflow: hidden;
+}

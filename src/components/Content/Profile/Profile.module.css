@@ -1,0 +1,41 @@
+.profileContainer {
+  display: flex;
+  gap: 100px;
+  height: 90vh;
+}
+
+.portrait,
+.infoBox {
+  height: 90vh;
+  width: 35vw;
+}
+
+.infoBox {
+  width: 65vw;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.font {
+  margin-top: 100px;
+}
+
+.name {
+  margin-left: 50px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.title span {
+  color: #845ec2;
+}
+
+.info {
+  margin-top: 20px;
+}
