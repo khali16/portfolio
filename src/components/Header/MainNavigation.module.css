@@ -1,5 +1,5 @@
 .appbar {
-  background-color: #4B4453 !important;
+  background-color: #4b4453 !important;
   height: 10vh;
 }
 
@@ -7,4 +7,10 @@
   display: flex;
   gap: 200px;
   margin: auto;
+}
+
+.link:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #a77ce4;
+  padding-bottom: 3px;
 }

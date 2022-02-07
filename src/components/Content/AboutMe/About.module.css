@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #B0A8B9
+  background-color: #b0a8b9;
 }
 
 .header {
@@ -17,9 +17,16 @@
   text-align: center;
 }
 @keyframes showTopText {
-  0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0, 50%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .title {
@@ -43,15 +50,15 @@
   padding: 2vmin 0;
   position: absolute;
 }
-.title> div div span {
+.title > div div span {
   display: block;
 }
-.title> div.titleText {
-  border-bottom: 1vmin solid #4B4453;
+.title > div.titleText {
+  border-bottom: 1vmin solid #4b4453;
   top: 0;
 }
 .title > div.titleText div {
-  animation:  showTopText 3s;
+  animation: showTopText 3s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -59,7 +66,7 @@
   transform: translate(0, 100%);
 }
 .title > div.textTop div span:first-child {
-  color: #FEF7FF 
+  color: #fef7ff;
 }
 
 .body {
@@ -68,13 +75,15 @@
   gap: 80px;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 .card {
   width: 350px;
   height: 300px;
-  background-color: #4B4453 !important;
-  color: #FEF7FF !important
+  background-color: #4b4453 !important;
+  color: #fef7ff !important;
+  box-shadow: 0px 5px 5px #2a1e39 !important;
 }
 
 .divider {
@@ -86,31 +95,18 @@
 }
 
 .icon {
-  fill: #FEFEDF !important;
+  fill: #fefedf !important;
 }
 
 .infoText {
   margin-top: 20px;
 }
 
-.downloadContainer{
-  width: 30vw;
+.downloadContainer {
+  width: 35vw;
   height: 50px;
   margin-bottom: 50px !important;
   margin: auto;
   display: flex;
-  gap: 205px
-}
-.downloadContainer a:link, a:visited{
-  background-color: #4B4453;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  width: 150px
-}
-
-.downloadContainer a:hover, a:active{
-  background-color: #4B4453;
+  gap: 205px;
 }

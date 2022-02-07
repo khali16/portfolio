@@ -9,28 +9,28 @@ import styles from "./TechStack.module.css";
 const TechStack = () => {
   return (
     <>
-    <Box className={styles.techContainer}>
-      <div className={styles.test}>
-        <img src={reactIcon} alt="react icon" />
-        <span>test</span>
-      </div>
-      <div className={styles.test}>
-        <img src={reduxIcon} alt="redux icon" />
-        <span>Redux</span>
-      </div>
-      <div className={styles.test}> 
-        <img src={typescriptIcon} alt="ts icon" />
-        <span>TypeScript</span>
-      </div>
-      <div className={styles.test}>  
-        <img src={materialIcon} alt="materialui icon" />
-        <span>MaterialUI</span>
-      </div>
-      <div className={styles.test}> 
-        <img src={firebaseIcon} alt="firebase icon" />
-        <span>Firebase</span>
-      </div>
-    </Box>
+      <Box className={styles.techContainer}>
+        <div className={styles.test}>
+          <img src={reactIcon} alt="react icon" />
+          <span>React</span>
+        </div>
+        <div className={styles.test}>
+          <img src={reduxIcon} alt="redux icon" />
+          <span>Redux</span>
+        </div>
+        <div className={styles.test}>
+          <img src={typescriptIcon} alt="ts icon" />
+          <span>TypeScript</span>
+        </div>
+        <div className={styles.test}>
+          <img src={materialIcon} alt="materialui icon" />
+          <span>MaterialUI</span>
+        </div>
+        <div className={styles.test}>
+          <img src={firebaseIcon} alt="firebase icon" />
+          <span>Firebase</span>
+        </div>
+      </Box>
     </>
   );
 };
