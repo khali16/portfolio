@@ -23,10 +23,25 @@ const PageWrapper = () => {
       scrollOverflow={true}
       render={({ fullpageApi }) => {
         return (
-          <div id="fullpage">
-            {sections.map((section) => (
-              <div className="section">{section}</div>
-            ))}
+          <div id="fullpage-wrapper">
+            <div className="section">
+              <Profile />
+            </div>
+            <div className="section">
+              <Project />
+            </div>
+            <div className="section">
+              <About />
+            </div>
+            <div className="section">
+              <MeliciiRecipes/>
+            </div>
+            <div className="section">
+              <KeepItCool/>
+            </div>
+            <div className="section">
+              <WorkoutPlanner/>
+            </div>
           </div>
         );
       }}

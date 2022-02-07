@@ -35,13 +35,13 @@
   }
   
   .button {
-    color: #845ec2 !important;
+    color: #dddddd !important;
     width: 100px;
     font-size: large !important;
   }
   
   .button:disabled{
-    color: #B0A8B9
+    color: #B0A8B9  !important
   }
   
   .githubButton {

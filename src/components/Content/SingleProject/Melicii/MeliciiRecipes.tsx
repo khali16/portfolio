@@ -1,11 +1,13 @@
 import SingleProject from "../SingleProject"
 import meliciiOverview from '../../../../Assests/Gifs/MeliciiOverview.gif'
+import newRecipe from '../../../../Assests/Gifs/NewRecipe.gif'
+import searchComponent from '../../../../Assests/Gifs/SearchComponent.gif'
 
 const MeliciiRecipes= () => {
     const steps = [
         { path: meliciiOverview },
-        { path: meliciiOverview },
-        { path: meliciiOverview },
+        { path: newRecipe },
+        { path: searchComponent },
       ];
       const projectInfo = "Melicii Recipes to CMS do tworzenia przepisów, korzystania z ich i oceniania."
       const techStack = ["React", "Typescript","Redux Toolkit", "Axios", "Mock server - Express", "Material UI"]

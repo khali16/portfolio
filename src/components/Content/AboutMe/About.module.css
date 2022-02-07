@@ -92,3 +92,25 @@
 .infoText {
   margin-top: 20px;
 }
+
+.downloadContainer{
+  width: 30vw;
+  height: 50px;
+  margin-bottom: 50px !important;
+  margin: auto;
+  display: flex;
+  gap: 205px
+}
+.downloadContainer a:link, a:visited{
+  background-color: #4B4453;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 150px
+}
+
+.downloadContainer a:hover, a:active{
+  background-color: #4B4453;
+}

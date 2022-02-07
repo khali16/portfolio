@@ -6,8 +6,11 @@ import ProfileArea from "./ProfileAreas/ProfileArea";
 import TechArea from "./ProfileAreas/TechArea";
 import SchoolArea from "./ProfileAreas/SchoolArea";
 import HobbyArea from "./ProfileAreas/HobbyArea";
+import CV from '../../../files/CV.pdf'
+import AboutMe from '../../../files/AboutMe.pdf'
 
 const About = () => {
+ 
   return (
     <>
       <Box className={styles.container}>
@@ -29,6 +32,10 @@ const About = () => {
           <TechArea />
           <SchoolArea />
           <HobbyArea />
+        </Box>
+        <Box className={styles.downloadContainer}>
+        <a href={CV} >Download CV</a>
+        <a href={AboutMe} >About me</a>
         </Box>
       </Box>
     </>

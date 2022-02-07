@@ -2,9 +2,6 @@ import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import { Box, Button, makeStyles, MobileStepper } from "@mui/material";
 import { useState } from "react";
 import SwipeableViews from "react-swipeable-views";
-import addingWorkout from "../../../../../../Assests/Gifs/AddingWorkout.gif";
-import calendarGif from "../../../../../../Assests/Gifs/Calendar.gif";
-import plannerLogging from "../../../../../../Assests/Gifs/WorkoutPlannerLoggin.gif";
 import { theme } from "../../Profile/theme";
 import styles from './ProjectView.module.css'
 import { useStyles } from "./style";
@@ -19,7 +16,7 @@ maxSteps: number,
 
 const ProjectView:React.FC<Props> = ({steps, maxSteps}) => {
     const c = useStyles()
-      const [activeStep, setActiveStep] = useState(0);
+      const [activeStep, setActiveStep] = useState(1);
     
       const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -67,7 +64,7 @@ const ProjectView:React.FC<Props> = ({steps, maxSteps}) => {
               <Button
                 size="small"
                 onClick={handleNext}
-                disabled={activeStep === maxSteps - 1}
+                disabled={activeStep === 4}
                 className={styles.button}
               >
                 Next
