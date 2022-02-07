@@ -6,10 +6,14 @@ import WorkoutPlanner from "./Content/SingleProject/WorkoutPlanner/WorkoutPlanne
 import MeliciiRecipes from "./Content/SingleProject/Melicii/MeliciiRecipes";
 import KeepItCool from "./Content/SingleProject/KeepItCool/KeepItCool";
 import Project from "./Content/Project/Project";
+import MainNavigation from "./Header/MainNavigation";
 
 const sections = [
-    <Profile />,
-    <Project />,
+  <>
+    <MainNavigation />
+    <Profile />
+  </>,
+  <Project />,
   <About />,
   <MeliciiRecipes />,
   <KeepItCool />,
@@ -25,7 +29,11 @@ const PageWrapper = () => {
         return (
           <div id="fullpage-wrapper">
             <div className="section">
-              <Profile />
+              <MainNavigation
+                moveToAbout={() => fullpageApi.moveTo(3, 0)}
+                moveToProjects={() => fullpageApi.moveTo(4, 0)}
+              />
+              <Profile moveDown={() => fullpageApi.moveTo(2, 0)} />
             </div>
             <div className="section">
               <Project />
@@ -34,13 +42,13 @@ const PageWrapper = () => {
               <About />
             </div>
             <div className="section">
-              <MeliciiRecipes/>
+              <MeliciiRecipes />
             </div>
             <div className="section">
-              <KeepItCool/>
+              <KeepItCool />
             </div>
             <div className="section">
-              <WorkoutPlanner/>
+              <WorkoutPlanner />
             </div>
           </div>
         );

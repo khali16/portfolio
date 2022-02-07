@@ -12,11 +12,11 @@
   height: 50px;
 }
 
-.test{
+.test {
   display: grid;
-  width: 70px
+  width: 70px;
 }
-.test img{
+.test img {
   grid-row: 1;
   margin: auto;
 }
@@ -26,6 +26,5 @@
   grid-row: 2;
   font-size: large;
   font-weight: bold;
-  color: #4B4453
+  color: #4a3d5a;
 }
-

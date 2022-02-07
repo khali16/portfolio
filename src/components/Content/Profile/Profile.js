@@ -6,9 +6,9 @@ import { useEffect, useRef } from "react";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "./theme";
 import TechStack from "../Projects/TechStack/TechStack";
-import MainNavigation from "../../Header/MainNavigation";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
-const Profile = () => {
+const Profile = ({ moveDown }) => {
   const textRef = useRef();
 
   useEffect(() => {
@@ -20,26 +20,26 @@ const Profile = () => {
 
   return (
     <>
-    <MainNavigation />
-    <Box className={styles.profileContainer}>
-      <img src={portrait} alt="" className={styles.portrait} />
-      <Box className={styles.infoBox}>
-        <ThemeProvider theme={theme}>
-          <Box className={styles.font}>
-            <Typography variant="h3">Cześć, nazywam się</Typography>
-          </Box>
-          <Box className={styles.name}>
-            <Typography variant="h2">Kamila Linert</Typography>
-          </Box>
-          <Box className={styles.title}>
-            <Typography variant="h4">
-              Aspirant <span ref={textRef}></span>
-            </Typography>
-          </Box>
-        </ThemeProvider>
-        <TechStack />
+      <Box className={styles.profileContainer}>
+        <img src={portrait} alt="" className={styles.portrait} />
+        <Box className={styles.infoBox}>
+          <ThemeProvider theme={theme}>
+            <Box className={styles.font}>
+              <Typography variant="h3">Cześć, nazywam się</Typography>
+            </Box>
+            <Box className={styles.name}>
+              <Typography variant="h2">Kamila Linert</Typography>
+            </Box>
+            <Box className={styles.title}>
+              <Typography variant="h4">
+                Aspirant <span ref={textRef}></span>
+              </Typography>
+            </Box>
+          </ThemeProvider>
+          <TechStack />
+          <ArrowDownwardIcon className={styles.icon} onClick={moveDown} />
+        </Box>
       </Box>
-    </Box>
     </>
   );
 };
