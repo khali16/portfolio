@@ -1,13 +1,10 @@
 .appbar {
-  background-color: #845ec2 !important;
+  background-color: #4B4453 !important;
   height: 10vh;
 }
 
 .toolbar {
-  position: fixed;
-  top: 0;
   display: flex;
   gap: 200px;
   margin: auto;
-  height: 70px;
 }

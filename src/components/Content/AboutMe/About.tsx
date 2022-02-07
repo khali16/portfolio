@@ -6,17 +6,24 @@ import ProfileArea from "./ProfileAreas/ProfileArea";
 import TechArea from "./ProfileAreas/TechArea";
 import SchoolArea from "./ProfileAreas/SchoolArea";
 import HobbyArea from "./ProfileAreas/HobbyArea";
+import CV from '../../../files/CV.pdf'
+import AboutMe from '../../../files/AboutMe.pdf'
 
 const About = () => {
+ 
   return (
     <>
       <Box className={styles.container}>
         <Box className={styles.header}>
           <ThemeProvider theme={theme}>
             <Box className={styles.titleContainer}>
-              <Typography variant="h2" className={styles.title}>
-                O mnie
-              </Typography>
+              <div className={styles.title}>
+        <div className={styles.titleText}>
+          <div>
+        <span>O mnie</span>
+        </div>
+        </div>
+        </div>
             </Box>
           </ThemeProvider>
         </Box>
@@ -25,6 +32,10 @@ const About = () => {
           <TechArea />
           <SchoolArea />
           <HobbyArea />
+        </Box>
+        <Box className={styles.downloadContainer}>
+        <a href={CV} >Download CV</a>
+        <a href={AboutMe} >About me</a>
         </Box>
       </Box>
     </>

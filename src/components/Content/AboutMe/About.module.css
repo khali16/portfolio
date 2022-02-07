@@ -3,30 +3,69 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #B0A8B9
 }
 
 .header {
   width: 100vw;
   height: 35vh;
-  background-color: #845ec2;
-  /* background-image: linear-gradient(#845ec2, #b39cd0); */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 70%, 0 100%, 0 100%);
   text-align: center;
 }
 
 .titleContainer {
   margin-top: 50px;
-  font-family: "Playfair Display", "serif";
+  text-align: center;
+}
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
 }
 
 .title {
   color: white;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  width: 40vmin;
+}
+
+.title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.title > div div {
+  font-size: 8vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.title> div div span {
+  display: block;
+}
+.title> div.titleText {
+  border-bottom: 1vmin solid #4B4453;
+  top: 0;
+}
+.title > div.titleText div {
+  animation:  showTopText 3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.title > div.textTop div span:first-child {
+  color: #FEF7FF 
 }
 
 .body {
   height: 65vh;
   display: flex;
-  gap: 100px;
+  gap: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -34,6 +73,8 @@
 .card {
   width: 350px;
   height: 300px;
+  background-color: #4B4453 !important;
+  color: #FEF7FF !important
 }
 
 .divider {
@@ -45,9 +86,31 @@
 }
 
 .icon {
-  fill: #4b4453 !important;
+  fill: #FEFEDF !important;
 }
 
 .infoText {
   margin-top: 20px;
+}
+
+.downloadContainer{
+  width: 30vw;
+  height: 50px;
+  margin-bottom: 50px !important;
+  margin: auto;
+  display: flex;
+  gap: 205px
+}
+.downloadContainer a:link, a:visited{
+  background-color: #4B4453;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 150px
+}
+
+.downloadContainer a:hover, a:active{
+  background-color: #4B4453;
 }

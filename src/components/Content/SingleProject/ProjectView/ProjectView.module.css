@@ -1,0 +1,40 @@
+.projectGifContainer{
+    width: 55vw;
+    height: 70vh;
+    flex-grow: 1;
+    margin-top: 250px;
+    margin-left: 50px;
+  }
+  .stepsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .projectTitle {
+    text-align: center;
+    color: #4d8076;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .projectGif {
+    margin-top: 20px;
+    height: 80%;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #4B4453
+  }
+  .button,
+  .githubButton {
+    color: #dddddd!important;
+    width: 100px;
+    font-size: large !important;
+  }
+
+  .button:disabled {
+    color:#B0A8B9 !important
+  }
+  

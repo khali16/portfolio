@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "./theme";
 import TechStack from "../Projects/TechStack/TechStack";
+import MainNavigation from "../../Header/MainNavigation";
 
 const Profile = () => {
   const textRef = useRef();
@@ -18,6 +19,8 @@ const Profile = () => {
   }, []);
 
   return (
+    <>
+    <MainNavigation />
     <Box className={styles.profileContainer}>
       <img src={portrait} alt="" className={styles.portrait} />
       <Box className={styles.infoBox}>
@@ -37,6 +40,7 @@ const Profile = () => {
         <TechStack />
       </Box>
     </Box>
+    </>
   );
 };
 

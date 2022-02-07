@@ -1,0 +1,53 @@
+.projectContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #B0A8B9;
+}
+  .stepsContainer {
+    margin-top: 250px !important;
+    width: 65vw;
+    margin: auto;
+    background-color: #4B4453;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stepper{
+      width: 65vw;
+      margin: auto
+  }
+  
+  .projectTitle {
+    text-align: center;
+    color: #B0A8B9;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .projectGif {
+    margin-top: 20px;
+    height: 450px;
+    display: block;
+    overflow: hidden;
+    width: 90%;
+  }
+  
+  .button {
+    color: #dddddd !important;
+    width: 100px;
+    font-size: large !important;
+  }
+  
+  .button:disabled{
+    color: #B0A8B9  !important
+  }
+  
+  .githubButton {
+    font-size: large !important;
+    text-align: center;
+    color: #00C0A3 !important;
+    width: 100px
+  }
+  
