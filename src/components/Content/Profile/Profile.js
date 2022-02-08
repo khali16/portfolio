@@ -31,10 +31,7 @@ const Profile = ({ moveDown }) => {
         <Box className={styles.infoBox}>
           <ThemeProvider theme={theme}>
             <Box className={styles.font}>
-              <Typography variant="h3">Cześć,</Typography>
-            </Box>
-            <Box className={styles.font}>
-              <Typography variant="h3">nazywam się</Typography>
+              <Typography variant="h3">Cześć, nazywam się</Typography>
             </Box>
             <Box className={styles.name}>
               <Typography variant="h2">Kamila Linert</Typography>

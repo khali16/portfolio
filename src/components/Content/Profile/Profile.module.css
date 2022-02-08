@@ -144,7 +144,11 @@
   }
   .font {
     margin-top: 20px;
+    width: 80%;
     color: #4b4453;
+    text-align: center;
+    margin: 0 auto;
+    text-align-last: auto;
   }
   .name {
     margin-left: 0;
