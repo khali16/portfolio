@@ -30,7 +30,7 @@
     color: #4a3d5a;
   }
 }
-@media screen and (min-width: 48px) and (max-width: 900px) {
+@media screen and (min-width: 480px) and (max-width: 900px) {
   .techContainer {
     display: flex;
     gap: 30px;
