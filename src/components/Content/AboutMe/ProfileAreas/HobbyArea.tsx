@@ -15,12 +15,13 @@ const HobbyArea = () => {
         <CardMedia height="70" component="svg" className={styles.iconContent}>
           <SportsEsportsIcon className={styles.icon} />
         </CardMedia>
-        <CardContent style={{ height: "300px" }}>
+        <CardContent style={{ height: "400px" }}>
           <Typography
             gutterBottom
             variant="body1"
             component="div"
             align="center"
+            className={styles.infoText}
           >
             Od ukończenia studiów w wolnym czasie pogłębiam wiedzę w zakresie
             Reacta i czytam książki fantasy. Interesuję się także kulturą

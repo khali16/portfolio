@@ -16,7 +16,7 @@ const TechArea = () => {
         <CardMedia height="70" component="svg" className={styles.iconContent}>
           <PsychologyIcon className={styles.icon} />
         </CardMedia>
-        <CardContent style={{ height: "300px" }}>
+        <CardContent style={{ height: "400px" }}>
           <Typography
             gutterBottom
             variant="body1"
