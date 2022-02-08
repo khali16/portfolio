@@ -38,7 +38,6 @@ const Project = () => {
             index={activeStep}
             interval={10000}
             onChangeIndex={handleStepChange}
-            enableMouseEvents
           >
             {projectData.map((step, index) => (
               <div key={index} className={styles.stepsContainer}>
