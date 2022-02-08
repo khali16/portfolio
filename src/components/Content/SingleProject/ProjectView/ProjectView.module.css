@@ -1,39 +1,123 @@
-.projectGifContainer {
-  width: 55vw;
-  height: 70vh;
-  flex-grow: 1;
-  margin-top: 250px;
-  margin-left: 50px;
-}
-.stepsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 1220px) {
+  .projectGifContainer {
+    width: 55vw;
+    height: 70vh;
+    flex-grow: 1;
+    margin-top: 250px;
+    margin-left: 50px;
+  }
+  .stepsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectTitle {
+    text-align: center;
+    color: #4d8076;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .projectGif {
+    height: 80%;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #4b4453;
+  }
+  .button,
+  .githubButton {
+    color: #dddddd !important;
+    width: 100px;
+    font-size: large !important;
+    z-index: 2;
+  }
+
+  .button:disabled {
+    color: #b0a8b9 !important;
+  }
 }
 
-.projectTitle {
-  text-align: center;
-  color: #4d8076;
-  text-transform: uppercase;
-  font-weight: bold;
+@media screen and (min-width: 480px) and (max-width: 1220px) {
+  .projectGifContainer {
+    width: 65vw;
+    height: 25vh;
+    flex-grow: 1;
+    margin-top: 150px;
+  }
+  .stepsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectTitle {
+    text-align: center;
+    color: #4d8076;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .projectGif {
+    height: 80%;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #4b4453;
+  }
+  .button,
+  .githubButton {
+    color: #dddddd !important;
+    width: 100px;
+    font-size: large !important;
+    z-index: 2;
+  }
+
+  .button:disabled {
+    color: #b0a8b9 !important;
+  }
 }
 
-.projectGif {
-  height: 80%;
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  border: 1px solid #4b4453;
-}
-.button,
-.githubButton {
-  color: #dddddd !important;
-  width: 100px;
-  font-size: large !important;
-  z-index: 2;
-}
+@media screen and (max-width: 480px) {
+  .projectGifContainer {
+    width: 75vw;
+    height: 25vh;
+    flex-grow: 1;
+    margin-top: 150px;
+  }
+  .stepsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.button:disabled {
-  color: #b0a8b9 !important;
+  .projectTitle {
+    text-align: center;
+    color: #4d8076;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .projectGif {
+    height: 80%;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #4b4453;
+  }
+  .button,
+  .githubButton {
+    color: #dddddd !important;
+    width: 100px;
+    font-size: large !important;
+    z-index: 2;
+  }
+
+  .button:disabled {
+    color: #b0a8b9 !important;
+  }
 }

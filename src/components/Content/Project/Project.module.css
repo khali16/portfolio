@@ -3,54 +3,217 @@
   height: 100vh;
   background-color: #b0a8b9;
 }
-.stepsContainer {
-  margin-top: 12% !important;
-  width: 65vw;
-  height: 68vh;
-  margin: auto;
-  background-color: #4b4453;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 1230px) {
+  .stepsContainer {
+    margin-top: 12% !important;
+    width: 65vw;
+    height: 68vh;
+    margin: auto;
+    background-color: #4b4453;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stepper {
+    width: 65vw;
+    margin: auto;
+    box-shadow: 0px 5px 5px #1d1724 !important;
+  }
+
+  .projectTitle {
+    text-align: center;
+    color: #b0a8b9;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px !important;
+  }
+
+  .projectGif {
+    margin-top: 20px;
+    height: 450px;
+    display: block;
+    overflow: hidden;
+    width: 85%;
+  }
+
+  .button {
+    color: #dddddd !important;
+    width: 100px;
+    font-size: large !important;
+  }
+
+  .button:disabled {
+    color: #b0a8b9 !important;
+  }
+
+  .githubButton {
+    font-size: large !important;
+    text-align: center;
+    background-color: #00c0a3 !important;
+    width: 100px;
+    margin-top: 5px !important;
+  }
 }
 
-.stepper {
-  width: 65vw;
-  margin: auto;
-  box-shadow: 0px 5px 5px #1d1724 !important;
+@media screen and (min-width: 720px) and (max-width: 1230px) {
+  .stepsContainer {
+    margin-top: 20% !important;
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    background-color: #4b4453;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stepper {
+    width: 80vw;
+    margin: auto;
+    box-shadow: 0px 5px 5px #1d1724 !important;
+  }
+
+  .projectTitle {
+    text-align: center;
+    color: #b0a8b9;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px !important;
+  }
+
+  .projectGif {
+    margin-top: 20px;
+    height: 450px;
+    display: block;
+    overflow: hidden;
+    width: 85%;
+  }
+
+  .button {
+    color: #dddddd !important;
+    width: 100px;
+    font-size: large !important;
+  }
+
+  .button:disabled {
+    color: #b0a8b9 !important;
+  }
+
+  .githubButton {
+    font-size: large !important;
+    text-align: center;
+    background-color: #00c0a3 !important;
+    width: 100px;
+    margin-top: 5px !important;
+  }
 }
 
-.projectTitle {
-  text-align: center;
-  color: #b0a8b9;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 5px !important;
+@media screen and (min-width: 470px) and (max-width: 720px) {
+  .stepsContainer {
+    margin-top: 30% !important;
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    background-color: #4b4453;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stepper {
+    width: 80vw;
+    margin: auto;
+    box-shadow: 0px 5px 5px #1d1724 !important;
+  }
+
+  .projectTitle {
+    text-align: center;
+    color: #b0a8b9;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px !important;
+  }
+
+  .projectGif {
+    margin-top: 20px;
+    height: 450px;
+    display: block;
+    overflow: hidden;
+    width: 85%;
+  }
+
+  .button {
+    color: #dddddd !important;
+    width: 100px;
+    font-size: large !important;
+  }
+
+  .button:disabled {
+    color: #b0a8b9 !important;
+  }
+
+  .githubButton {
+    font-size: large !important;
+    text-align: center;
+    background-color: #00c0a3 !important;
+    width: 100px;
+    margin-top: 5px !important;
+  }
 }
 
-.projectGif {
-  margin-top: 20px;
-  height: 450px;
-  display: block;
-  overflow: hidden;
-  width: 85%;
-}
+@media screen and (max-width: 480px) {
+  .stepsContainer {
+    margin-top: 35% !important;
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    background-color: #4b4453;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.button {
-  color: #dddddd !important;
-  width: 100px;
-  font-size: large !important;
-}
+  .stepper {
+    width: 90vw;
+    margin: auto;
+    box-shadow: 0px 5px 5px #1d1724 !important;
+  }
 
-.button:disabled {
-  color: #b0a8b9 !important;
-}
+  .projectTitle {
+    text-align: center;
+    color: #b0a8b9;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 
-.githubButton {
-  font-size: large !important;
-  text-align: center;
-  background-color: #00c0a3 !important;
-  width: 100px;
-  margin-top: 5px !important;
+  .projectGif {
+    margin-top: 20px;
+    height: 50%;
+    display: block;
+    overflow: hidden;
+    width: 80%;
+  }
+
+  .button {
+    color: #dddddd !important;
+    width: 100px;
+    font-size: large !important;
+  }
+
+  .button:disabled {
+    color: #b0a8b9 !important;
+  }
+
+  .githubButton {
+    font-size: large !important;
+    text-align: center;
+    background-color: #00c0a3 !important;
+    width: 100px;
+    margin-top: 5px !important;
+  }
 }

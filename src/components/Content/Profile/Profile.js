@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import portrait from "../../../Assests/portrait.png";
+import mobilePortrait from "../../../Assests/MobilePortrait.png";
 import styles from "./Profile.module.css";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
@@ -21,7 +22,12 @@ const Profile = ({ moveDown }) => {
   return (
     <>
       <Box className={styles.profileContainer}>
-        <img src={portrait} alt="" className={styles.portrait} />
+        <img src={portrait} alt="portrait" className={styles.portrait} />
+        <img
+          src={mobilePortrait}
+          alt="portrait"
+          className={styles.mobilePortrait}
+        />
         <Box className={styles.infoBox}>
           <ThemeProvider theme={theme}>
             <Box className={styles.font}>
@@ -31,7 +37,7 @@ const Profile = ({ moveDown }) => {
               <Typography variant="h2">Kamila Linert</Typography>
             </Box>
             <Box className={styles.title}>
-              <Typography variant="h4">
+              <Typography variant="h5">
                 Aspirant <span ref={textRef}></span>
               </Typography>
             </Box>

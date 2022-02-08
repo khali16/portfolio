@@ -15,12 +15,13 @@ const ProfileArea = () => {
         <CardMedia height="70" component="svg" className={styles.iconContent}>
           <PersonIcon className={styles.icon} />
         </CardMedia>
-        <CardContent>
+        <CardContent style={{ height: "400px" }}>
           <Typography
             gutterBottom
             variant="body1"
             component="div"
             align="center"
+            className={styles.infoText}
           >
             Od marca zeszłego roku aktywnie tworzyłam projekty w ReactJS, w
             których posługiwałam się JavaScriptem, TypeScriptem, Expressem do

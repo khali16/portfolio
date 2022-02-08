@@ -1,16 +1,56 @@
-.appbar {
-  background-color: #4b4453 !important;
-  height: 10vh;
+@media screen and (min-width: 900px) {
+  .appbar {
+    background-color: #4b4453 !important;
+    height: 10vh;
+  }
+
+  .toolbar {
+    display: flex;
+    gap: 200px;
+    margin: auto;
+  }
+
+  .link:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #a77ce4;
+    padding-bottom: 3px;
+  }
 }
 
-.toolbar {
-  display: flex;
-  gap: 200px;
-  margin: auto;
+@media screen and (min-width: 48px) and (max-width: 900px) {
+  .appbar {
+    background-color: #4b4453 !important;
+    height: 10vh;
+  }
+
+  .toolbar {
+    display: flex;
+    gap: 100px;
+    margin: auto;
+  }
+
+  .link:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #a77ce4;
+    padding-bottom: 3px;
+  }
 }
 
-.link:hover {
-  cursor: pointer;
-  border-bottom: 2px solid #a77ce4;
-  padding-bottom: 3px;
+@media screen and (max-width: 480px) {
+  .appbar {
+    background-color: #4b4453 !important;
+    height: 10vh;
+  }
+
+  .toolbar {
+    display: flex;
+    gap: 100px;
+    margin: auto;
+  }
+
+  .link:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #a77ce4;
+    padding-bottom: 3px;
+  }
 }

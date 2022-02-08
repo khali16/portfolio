@@ -10,23 +10,23 @@ const TechStack = () => {
   return (
     <>
       <Box className={styles.techContainer}>
-        <div className={styles.test}>
+        <div className={styles.tech}>
           <img src={reactIcon} alt="react icon" />
           <span>React</span>
         </div>
-        <div className={styles.test}>
+        <div className={styles.tech}>
           <img src={reduxIcon} alt="redux icon" />
           <span>Redux</span>
         </div>
-        <div className={styles.test}>
+        <div className={styles.tech}>
           <img src={typescriptIcon} alt="ts icon" />
           <span>TypeScript</span>
         </div>
-        <div className={styles.test}>
+        <div className={styles.tech}>
           <img src={materialIcon} alt="materialui icon" />
           <span>MaterialUI</span>
         </div>
-        <div className={styles.test}>
+        <div className={styles.tech}>
           <img src={firebaseIcon} alt="firebase icon" />
           <span>Firebase</span>
         </div>

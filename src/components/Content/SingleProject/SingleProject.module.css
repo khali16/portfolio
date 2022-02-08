@@ -1,12 +1,44 @@
 .plannerContainer {
-    width: 100vw;
-    height: 100vh;
-    background-color: #B0A8B9;
-  }
-  
+  width: 100vw;
+  height: 100vh;
+  background-color: #b0a8b9;
+}
+
+@media screen and (min-width: 1220px) {
   .projectContainer {
-    display: flex
+    display: flex;
   }
-  
-  
-  
+
+  .projectInfoContainer {
+    margin-top: 250px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1220px) {
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectInfoContainer {
+    margin-top: 50px;
+    z-index: 5;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectInfoContainer {
+    margin-top: 50px;
+    z-index: 5;
+  }
+}

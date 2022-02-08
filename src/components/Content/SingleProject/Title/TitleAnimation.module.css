@@ -1,15 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+
 @keyframes showTopText {
-  0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0, 50%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 @keyframes showBottomText {
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, -30%, 0);
+  }
 }
+
 .animatedTitle {
-  color: #4B4453;
+  color: #4b4453;
   font-family: Roboto, Arial, sans-serif;
   height: 90vmin;
   left: 50%;
@@ -33,18 +46,18 @@
   display: block;
 }
 .animatedTitle > div.textTop {
-  border-bottom: 1vmin solid #4B4453;
+  border-bottom: 1vmin solid #4b4453;
   top: 0;
 }
 .animatedTitle > div.textTop div {
-  animation:  showTopText 3s;
+  animation: showTopText 3s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
 }
 .animatedTitle > div.textTop div span:first-child {
-  color: #FEF7FF 
+  color: #fef7ff;
 }
 .animatedTitle > div.textBottom {
   bottom: 0;
