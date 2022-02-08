@@ -59,6 +59,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
   }
 }
 
@@ -124,6 +125,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 650px) {
@@ -188,6 +190,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
   }
 }
 
@@ -250,6 +253,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
   }
 }
 
