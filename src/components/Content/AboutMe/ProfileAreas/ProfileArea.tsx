@@ -15,7 +15,7 @@ const ProfileArea = () => {
         <CardMedia height="70" component="svg" className={styles.iconContent}>
           <PersonIcon className={styles.icon} />
         </CardMedia>
-        <CardContent>
+        <CardContent style={{ height: "300px" }}>
           <Typography
             gutterBottom
             variant="body1"

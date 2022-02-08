@@ -15,7 +15,7 @@ const HobbyArea = () => {
         <CardMedia height="70" component="svg" className={styles.iconContent}>
           <SportsEsportsIcon className={styles.icon} />
         </CardMedia>
-        <CardContent>
+        <CardContent style={{ height: "300px" }}>
           <Typography
             gutterBottom
             variant="body1"
