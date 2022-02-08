@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 720px) and (max-width: 1230px) {
   .stepsContainer {
-    margin-top: 20% !important;
+    margin-top: 160px !important;
     width: 80vw;
     height: 60vh;
     margin: auto;
