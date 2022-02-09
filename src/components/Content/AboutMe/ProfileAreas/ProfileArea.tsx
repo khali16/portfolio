@@ -3,6 +3,7 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
+  Link,
   Typography,
 } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
@@ -23,10 +24,10 @@ const ProfileArea = () => {
             align="center"
             className={styles.infoText}
           >
-            Od marca zeszłego roku aktywnie tworzyłam projekty w ReactJS, w
-            których posługiwałam się JavaScriptem, TypeScriptem, Expressem do
-            mockowania serwerów, HTML i CSS, by przygotować się do aplikowania
-            do firm jako Junior React Developer.
+            Od marca zeszłego roku aktywnie tworzę projekty w ReactJS, aby
+            zostać programistką front-endową. Zaczęłam naukę od kursu na Udemy,
+            a po jego ukończeniu tworzyłam własne aplikacje, które można znaleźć
+            na moim githubie. Ciekawsze z nich są przedstawione poniżej.
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -35,10 +35,10 @@ const About = () => {
         </Box>
         <Box className={styles.downloadContainer}>
           <a href={CV} className="hvr-grow">
-            Download CV
+            Pobierz CV
           </a>
           <a href={AboutMe} className="hvr-grow">
-            About me
+            O Mnie
           </a>
         </Box>
       </Box>

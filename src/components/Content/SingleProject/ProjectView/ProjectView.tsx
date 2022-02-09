@@ -66,7 +66,7 @@ const ProjectView: React.FC<Props> = ({ steps, maxSteps }) => {
             disabled={activeStep === 2}
             className={styles.button}
           >
-            Next
+            Dalej
             {theme.direction === "rtl" ? (
               <KeyboardArrowLeft />
             ) : (
@@ -86,7 +86,7 @@ const ProjectView: React.FC<Props> = ({ steps, maxSteps }) => {
             ) : (
               <KeyboardArrowLeft />
             )}
-            Back
+            Wstecz
           </Button>
         }
       />

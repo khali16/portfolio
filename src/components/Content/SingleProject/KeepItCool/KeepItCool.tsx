@@ -10,7 +10,7 @@ const KeepItCool = () => {
     { path: statistics },
   ];
   const projectInfo =
-    "Keep It Cool to aplikacja służąca do mierzenia ilości wypitych płynów i przygotowania statystyk tygodniowych";
+    "Keep It Cool to aplikacja służąca do mierzenia ilości wypitych płynów i przygotowania statystyk tygodniowych.";
   const techStack = [
     "React",
     "Typescript",

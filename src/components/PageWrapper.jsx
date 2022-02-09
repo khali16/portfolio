@@ -8,18 +8,6 @@ import KeepItCool from "./Content/SingleProject/KeepItCool/KeepItCool";
 import Project from "./Content/Project/Project";
 import MainNavigation from "./Header/MainNavigation";
 
-const sections = [
-  <>
-    <MainNavigation />
-    <Profile />
-  </>,
-  <Project />,
-  <About />,
-  <MeliciiRecipes />,
-  <KeepItCool />,
-  <WorkoutPlanner />,
-];
-
 const PageWrapper = () => {
   return (
     <ReactFullpage
@@ -36,10 +24,10 @@ const PageWrapper = () => {
               <Profile moveDown={() => fullpageApi.moveTo(2, 0)} />
             </div>
             <div className="section">
-              <Project />
+              <About />
             </div>
             <div className="section">
-              <About />
+              <Project />
             </div>
             <div className="section">
               <MeliciiRecipes />

@@ -28,7 +28,6 @@
   }
 
   .name {
-    margin-left: 50px;
     margin-top: 50px;
     font-weight: bold;
     color: #4b4453;
@@ -37,7 +36,6 @@
   .title {
     font-weight: bold;
     margin-top: 20px;
-    margin-left: 50px;
     color: #4b4453;
   }
 
@@ -54,6 +52,7 @@
     width: 70px !important;
     height: 70px !important;
     fill: #4b4453 !important;
+    cursor: pointer;
   }
 
   .icon:hover {
@@ -114,6 +113,7 @@
     height: 70px !important;
     fill: #4b4453 !important;
     z-index: 2;
+    cursor: pointer;
   }
 
   .icon:hover {
@@ -144,7 +144,11 @@
   }
   .font {
     margin-top: 20px;
+    width: 80%;
     color: #4b4453;
+    text-align: center;
+    margin: 0 auto;
+    text-align-last: auto;
   }
   .name {
     margin-left: 0;
@@ -166,6 +170,7 @@
     width: 70px;
     height: 70px;
     fill: #4b4453 !important;
+    cursor: pointer;
   }
 
   .icon:hover {

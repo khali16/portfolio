@@ -23,9 +23,8 @@ const HobbyArea = () => {
             align="center"
             className={styles.infoText}
           >
-            Od ukończenia studiów w wolnym czasie pogłębiam wiedzę w zakresie
-            Reacta i czytam książki fantasy. Interesuję się także kulturą
-            japońską, przez co zaczęłam uczyć się japońskiego na własną rękę.
+            Interesuję się literaturą fantasy, grami rpg oraz kulturą japońską .
+            W wolnym czasie uczę się również języka japońskiego.
           </Typography>
         </CardContent>
       </CardActionArea>
