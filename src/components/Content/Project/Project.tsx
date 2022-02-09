@@ -47,7 +47,7 @@ const Project = () => {
                       {step.title}
                     </Typography>
                     <Button
-                      onClick={() => (window.location.href = step.github)}
+                      onClick={() => window.open(step.github, "_blank")}
                       className={styles.githubButton}
                       variant="contained"
                     >
@@ -80,7 +80,7 @@ const Project = () => {
                 disabled={activeStep === maxSteps - 1}
                 className={styles.button}
               >
-                Next
+                Dalej
                 {theme.direction === "rtl" ? (
                   <KeyboardArrowLeft />
                 ) : (
@@ -100,7 +100,7 @@ const Project = () => {
                 ) : (
                   <KeyboardArrowLeft />
                 )}
-                Back
+                Wstecz
               </Button>
             }
           />
