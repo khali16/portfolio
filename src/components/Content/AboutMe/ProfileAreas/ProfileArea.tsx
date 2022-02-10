@@ -27,7 +27,13 @@ const ProfileArea = () => {
             Od marca zeszłego roku aktywnie tworzę projekty w ReactJS, aby
             zostać programistką front-endową. Zaczęłam naukę od kursu na Udemy,
             a po jego ukończeniu tworzyłam własne aplikacje, które można znaleźć
-            na moim githubie. Ciekawsze z nich są przedstawione poniżej.
+            na moim{" "}
+            {
+              <a href="https://github.com/khali16" target="_blank">
+                githubie
+              </a>
+            }
+            . Ciekawsze z nich są przedstawione poniżej.
           </Typography>
         </CardContent>
       </CardActionArea>

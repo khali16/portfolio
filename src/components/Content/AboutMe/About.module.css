@@ -52,6 +52,10 @@
   .infoText {
     margin-top: 20px;
   }
+  .infoText a {
+    color: #00c0a3;
+    text-decoration: none;
+  }
 
   .downloadContainer {
     width: 30vw;
@@ -119,6 +123,10 @@
     font-size: small !important;
   }
 
+  .infoText a {
+    color: #00c0a3;
+    text-decoration: none;
+  }
   .downloadContainer {
     width: 50vw;
     height: 50px;
@@ -182,6 +190,10 @@
   .infoText {
     margin-top: 20px;
     font-size: xx-small !important;
+  }
+  .infoText a {
+    color: #00c0a3;
+    text-decoration: none;
   }
 
   .downloadContainer {
@@ -247,6 +259,10 @@
   .infoText {
     font-size: x-small !important;
   }
+  .infoText a {
+    color: #00c0a3;
+    text-decoration: none;
+  }
 
   .downloadContainer {
     width: 95vw;
@@ -265,12 +281,6 @@
 @keyframes showTopText {
   0% {
     transform: translate3d(0, 100%, 0);
-  }
-  40% {
-    transform: translate3d(0, 60%, 0);
-  }
-  60% {
-    transform: translate3d(0, 30%, 0);
   }
   100% {
     transform: translate3d(0, 0, 0);
@@ -295,7 +305,6 @@
 }
 .title > div div {
   font-size: 8vmin;
-  padding: 2vmin 0;
   position: absolute;
 }
 .title > div div span {
