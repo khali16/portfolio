@@ -50,7 +50,7 @@
   top: 0;
 }
 .animatedTitle > div.textTop div {
-  animation: showTopText 3s;
+  animation: showTopText 5s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   bottom: 0;
@@ -63,9 +63,9 @@
   bottom: 0;
 }
 .animatedTitle > div.textBottom div {
-  animation: showBottomText 3s;
+  animation: showBottomText 5s;
   animation-delay: 1.75s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   animation-iteration-count: infinite;
   top: 0;
   transform: translate(0, -100%);

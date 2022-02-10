@@ -18,8 +18,8 @@ const PageWrapper = () => {
           <div id="fullpage-wrapper">
             <div className="section">
               <MainNavigation
-                moveToAbout={() => fullpageApi.moveTo(3, 0)}
-                moveToProjects={() => fullpageApi.moveTo(4, 0)}
+                moveToAbout={() => fullpageApi.moveTo(2, 0)}
+                moveToProjects={() => fullpageApi.moveTo(3, 0)}
               />
               <Profile moveDown={() => fullpageApi.moveTo(2, 0)} />
             </div>
