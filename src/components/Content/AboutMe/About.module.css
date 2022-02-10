@@ -266,9 +266,11 @@
   0% {
     transform: translate3d(0, 100%, 0);
   }
-  40%,
+  40% {
+    transform: translate3d(0, 60%, 0);
+  }
   60% {
-    transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 30%, 0);
   }
   100% {
     transform: translate3d(0, 0, 0);
@@ -304,7 +306,7 @@
   top: 0;
 }
 .title > div.titleText div {
-  animation: showTopText 3s;
+  animation: showTopText 5s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
