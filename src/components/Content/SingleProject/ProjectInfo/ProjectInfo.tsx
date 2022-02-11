@@ -16,8 +16,8 @@ const ProjectInfo: React.FC<Props> = ({ projectInfo, techStack }) => {
             <div className={styles.techStack}>
               <div className={styles.line}></div>
               <ul>
-                {techStack.map((stack) => (
-                  <li>{stack}</li>
+                {techStack.map((stack, index) => (
+                  <li key={index}>{stack}</li>
                 ))}
               </ul>
             </div>
