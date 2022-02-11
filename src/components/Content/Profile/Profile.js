@@ -22,10 +22,16 @@ const Profile = ({ moveDown }) => {
   return (
     <>
       <Box className={styles.profileContainer}>
-        <img src={portrait} alt="portrait" className={styles.portrait} />
+        <img
+          src={portrait}
+          draggable="false"
+          alt="portrait"
+          className={styles.portrait}
+        />
         <img
           src={mobilePortrait}
           alt="portrait"
+          draggable="false"
           className={styles.mobilePortrait}
         />
         <Box className={styles.infoBox}>
