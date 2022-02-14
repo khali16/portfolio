@@ -47,6 +47,9 @@ const Profile = ({ moveDown }) => {
                 Aspirant <span ref={textRef}></span>
               </Typography>
             </Box>
+            <Box className={styles.title}>
+              <Typography variant="h5">linertk@gmail.com</Typography>
+            </Box>
           </ThemeProvider>
           <TechStack />
           <ArrowDownwardIcon className={styles.icon} onClick={moveDown} />
